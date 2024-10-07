@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+//import Nav from "react-bootstrap/Nav";
+//import Navbar from "react-bootstrap/Navbar";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+//import Image from "react-bootstrap/Image";
+//import Button from "react-bootstrap/esm/Button";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+import items from "./Data/ImageData";
+
+const App=() => { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="vh-100 bg-dark">
+      <Container className="vh-100">
+        <header>
+          <Row className="mt-4 mb-4">
+            <Col>
+              <ListGroup className="mt-4 mb-4">
+                <ListGroup.Item>Schema: Stefan Nieuwenburg</ListGroup.Item>
+                <ListGroup.Item>Trainer: Victor</ListGroup.Item>
+                <ListGroup.Item>Start date: 2024-07-10</ListGroup.Item>
+                <ListGroup.Item>End date: 2024-04-11</ListGroup.Item>
+                <ListGroup.Item>Report fittness365 Amsterdam</ListGroup.Item>
+              </ListGroup>
+            </Col>
+          </Row>
+        </header>
+        <main className="bg-dark">
+          <Row xs={1} md={2} className="g-4 bg-dark">
+            {items.map((item) => (
+              <Col key={item.id}>
+                <Card className="mb-4">
+                  <Card.Img variant="top" src={item.src} className="w-50" />
+                  <Card.Body>
+                    <Card.Title>{item.title}</Card.Title>
+                    <ListGroup>
+                      <ListGroup.Item>Tempo:</ListGroup.Item>
+                      <ListGroup.Item>Sets x Reps</ListGroup.Item>
+                      <ListGroup.Item>Pauze(sec) 30-60</ListGroup.Item>
+                      <ListGroup.Item>Gew: 15 tot 25</ListGroup.Item>
+                    </ListGroup>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </main>
+        <footer className="bg-dark">
+          <ListGroup className="mt-4 mb-4">
+            <ListGroup.Item>Aantal weken: 4</ListGroup.Item>
+            <ListGroup.Item className="mb-4">fittness365</ListGroup.Item>
+          </ListGroup>
+        </footer>
+      </Container>
     </div>
   );
 }
