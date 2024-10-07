@@ -35,7 +35,8 @@ const App=() => {
                 <Card className="mb-4">
                   <Card.Img variant="top" src={item.src} className="w-50" />
                   <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Title className="mb-2 text-muted">{item.title}</Card.Title>
+                    <Card.Text>{item.description}</Card.Text>
                     <ListGroup>
                       <ListGroup.Item>Tempo:</ListGroup.Item>
                       <ListGroup.Item>Sets x Reps</ListGroup.Item>
