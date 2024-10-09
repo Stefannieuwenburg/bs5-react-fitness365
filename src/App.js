@@ -39,8 +39,8 @@ const App=() => {
                     <Card.Text>{item.description}</Card.Text>
                     <ListGroup>
                       <ListGroup.Item>Tempo:</ListGroup.Item>
-                      <ListGroup.Item>Sets x Reps</ListGroup.Item>
-                      <ListGroup.Item>Pauze(sec) 30-60</ListGroup.Item>
+                      <ListGroup.Item>Sets x Reps: 3x10</ListGroup.Item>
+                      <ListGroup.Item>Pauze(sec: 30-60</ListGroup.Item>
                       <ListGroup.Item>Gew: 15 tot 25</ListGroup.Item>
                     </ListGroup>
                   </Card.Body>
