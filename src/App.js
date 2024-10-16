@@ -48,11 +48,17 @@ const App=() => {
             ))}
           </Row>
           <Row>
-            <Col className="mt-4 mb-4">
+            <Col className="mt-2 mb-2 text-center">
               <ListGroup>
-                <ListGroup.Item>
-                  {" "}
-                  !!!!!!!!!!!!!! Extra Mogelijkheden !!!!!!!!!!!!!!!!
+                <ListGroup.Item className="me-auto">
+                  <strong>
+                    {" "}
+                    !!!!!! Extra Mogelijkheden !!!!!!!
+                  </strong>
+                  <ListGroup.Item>
+                    {" "}
+                    <small className="text-muted">just try it</small>
+                  </ListGroup.Item>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -81,7 +87,8 @@ const App=() => {
         </main>
         <footer className="bg-dark">
           <ListGroup className="mt-4 mb-4">
-            <ListGroup.Item>Aantal weken: 4</ListGroup.Item>
+            <ListGroup.Item>Aantal weken:4</ListGroup.Item>
+            <ListGroup.Item>Tel:0626142085</ListGroup.Item>
             <ListGroup.Item className="mb-4">fittness365</ListGroup.Item>
           </ListGroup>
         </footer>
