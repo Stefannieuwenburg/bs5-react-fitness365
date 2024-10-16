@@ -47,17 +47,13 @@ const App=() => {
               </Col>
             ))}
           </Row>
-          <Row>
+          <Row className="mx-auto">
             <Col className="mt-2 mb-2 text-center">
               <ListGroup>
-                <ListGroup.Item className="me-auto">
-                  <strong>
-                    {" "}
-                    !!!!!! Extra Mogelijkheden !!!!!!!
-                  </strong>
+                <ListGroup.Item>
+                  <strong>!!!!!! Extra Mogelijkheden !!!!!!!</strong>
                   <ListGroup.Item>
-                    {" "}
-                    <small className="text-muted">just try it</small>
+                    <p className="text-bold">just try it</p>
                   </ListGroup.Item>
                 </ListGroup.Item>
               </ListGroup>
