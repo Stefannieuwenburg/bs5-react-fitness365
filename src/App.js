@@ -1,6 +1,8 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
@@ -11,7 +13,20 @@ const App=() => {
   return (
     <div className="vh-100 ">
       <Container className="vh-100 ">
-        <header className="bg-dark rounded">
+        <Navbar bg="dark" variant="dark" expand="lg">
+          <Container>
+            <Navbar.Brand href="#home">Fitness 365</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="#Home">Home</Nav.Link>
+                <Nav.Link href="#Extra">Extra</Nav.Link>
+                <Nav.Link href="#Contact">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        <header id="Home" className="bg-dark rounded">
           <Row className="mt-4 mb-4">
             <Col>
               <ListGroup className="mt-4 mb-4">
@@ -25,7 +40,7 @@ const App=() => {
             </Col>
           </Row>
         </header>
-        <main className="">
+        <main>
           <Row xs={1} md={2} className="g-4 bg-dark rounded ">
             {items.map((item) => (
               <Col key={item.id}>
@@ -47,7 +62,7 @@ const App=() => {
               </Col>
             ))}
           </Row>
-          <Row className="mx-auto bg-dark rounded">
+          <Row id="Extra" className="mx-auto bg-dark rounded">
             <Col className="my-4 text-center">
               <ListGroup>
                 <ListGroup.Item>
@@ -81,10 +96,10 @@ const App=() => {
             ))}
           </Row>
         </main>
-        <footer className="">
+        <footer id="Contact">
           <ListGroup className="mt-4 mb-4 bg-dark rounded">
             <ListGroup.Item>Aantal weken:4</ListGroup.Item>
-            <ListGroup.Item>Tel:0626142085</ListGroup.Item>
+            <ListGroup.Item>Tel:085 487 1920</ListGroup.Item>
             <ListGroup.Item className="mb-4">fittness365</ListGroup.Item>
           </ListGroup>
         </footer>
