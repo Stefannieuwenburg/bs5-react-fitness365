@@ -9,9 +9,9 @@ import items from "./Data/ImageData";
 import data from "./Data/ExtraData";
 const App=() => { 
   return (
-    <div className="vh-100 bg-dark">
-      <Container className="vh-100">
-        <header>
+    <div className="vh-100 ">
+      <Container className="vh-100 ">
+        <header className="bg-dark rounded">
           <Row className="mt-4 mb-4">
             <Col>
               <ListGroup className="mt-4 mb-4">
@@ -25,8 +25,8 @@ const App=() => {
             </Col>
           </Row>
         </header>
-        <main className="bg-dark">
-          <Row xs={1} md={2} className="g-4 bg-dark">
+        <main className="">
+          <Row xs={1} md={2} className="g-4 bg-dark rounded ">
             {items.map((item) => (
               <Col key={item.id}>
                 <Card className="mb-4">
@@ -47,8 +47,8 @@ const App=() => {
               </Col>
             ))}
           </Row>
-          <Row className="mx-auto">
-            <Col className="mt-2 mb-2 text-center">
+          <Row className="mx-auto bg-dark rounded">
+            <Col className="my-4 text-center">
               <ListGroup>
                 <ListGroup.Item>
                   <strong>!!!!!! Extra Mogelijkheden !!!!!!!</strong>
@@ -59,7 +59,7 @@ const App=() => {
               </ListGroup>
             </Col>
           </Row>
-          <Row xs={1} md={2} className="g-4 bg-dark">
+          <Row xs={1} md={2} className="g-4 bg-dark rounded">
             {data.map((item) => (
               <Col key={item.id}>
                 <Card className="mb-4">
@@ -81,8 +81,8 @@ const App=() => {
             ))}
           </Row>
         </main>
-        <footer className="bg-dark">
-          <ListGroup className="mt-4 mb-4">
+        <footer className="">
+          <ListGroup className="mt-4 mb-4 bg-dark rounded">
             <ListGroup.Item>Aantal weken:4</ListGroup.Item>
             <ListGroup.Item>Tel:0626142085</ListGroup.Item>
             <ListGroup.Item className="mb-4">fittness365</ListGroup.Item>
