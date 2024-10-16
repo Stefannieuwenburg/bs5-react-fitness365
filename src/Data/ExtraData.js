@@ -1,4 +1,4 @@
-//import Image1 from "../Data/image/ChestPress.png";
+import Image1 from "../Data/image/ChestPress.png";
 import Image3 from "../Data/image/PelvicTilt.jpg";
 import Image4 from "../Data/image/BackExtension.png";
 import Image5 from "../Data/image/ShoulderPress.png";
@@ -38,12 +38,12 @@ const Data = [
     title: "Dips Press Seated",
     description: "Schouders",
   },
-  // {
-  //   id: 5,
-  //   src: Image1,
-  //   title: "Chest Press",
-  //   description: "Borst",
-  // },
+  {
+   id: 5,
+    src: Image1,
+    title: "Chest Press",
+   description: "Borst",
+   },
   {
     id: 5,
     src: Image4,
