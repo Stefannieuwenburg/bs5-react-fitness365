@@ -1,5 +1,5 @@
-import Image0 from "../Data/image/CrossTrainer.png";
-import Image1 from "../Data/image/RowWide.png";
+
+import Image1 from "../Data/image/RowDrax.png";
 import Image2 from "../Data/image/fly.png";
 import Image8 from "../Data/image/LegExtension.png";
 import Image11 from "../Data/image/CrunchBuik.png";
@@ -10,12 +10,6 @@ import Image16 from "../Data/image/LegCurl.png";
 
 const Items = [
   {
-    id: 0,
-    src: Image0,
-    title: "Cardio Indoor",
-    description: "Cardio",
-  },
-  {
     id: 1,
     src: Image15,
     title: "Leg Press",
@@ -23,9 +17,9 @@ const Items = [
   },
   {
     id: 2,
-    src: Image8,
-    title: "Leg Extension",
-    description: "BovenBenen",
+    src: Image2,
+    title: "Fly",
+    description: "Borst",
   },
   {
     id: 3,
@@ -47,10 +41,11 @@ const Items = [
   },
   {
     id: 6,
-    src: Image2,
-    title: "Fly",
-    description: "Borst",
+    src: Image8,
+    title: "Leg Extension",
+    description: "BovenBenen",
   },
+
   {
     id: 7,
     src: Image11,

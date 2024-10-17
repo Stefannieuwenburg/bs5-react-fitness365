@@ -39,11 +39,11 @@ const Data = [
     description: "Schouders",
   },
   {
-   id: 5,
+    id: 5,
     src: Image1,
     title: "Chest Press",
-   description: "Borst",
-   },
+    description: "Borst",
+  },
   {
     id: 5,
     src: Image4,
